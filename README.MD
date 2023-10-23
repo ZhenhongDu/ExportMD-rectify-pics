@@ -1,4 +1,6 @@
 # ExportMD-rectify-pics
+请注意，本方法在语雀版本升级后，只能支持超级会员使用token导出！
+
 ## 1、写在前面
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue) ![License](https://img.shields.io/badge/license-MIT-yellow) ![python](https://img.shields.io/badge/python->=3.6-orange)
 
@@ -48,7 +50,9 @@ pip install -r requirements.txt
 知识库 [https://www.yuque.com/YourYuqueUserName](https://www.yuque.com/YourYuqueUserName)  对应的 *namespace* 为 *YourYuqueUserName*
 
 ## 获取 token
-![token](https://s3.jpg.cm/2021/08/17/IUIASp.png)
+请注意，目前只有超级会员才能开启token
+
+
 ## 使用 python3 运行
 ```bash
 python ExportMD.py
