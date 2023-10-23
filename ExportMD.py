@@ -156,10 +156,18 @@ class ExportMD:
     async def download_image(self, session, image_info: dict, save_dir: str):
         img_src = image_info['img_src']
         filename = image_info["filename"]
+        # fixed pics unfind bugs
+        try:
+            async with session.get(img_src) as resp:
+                with open(os.path.join(save_dir, filename), 'wb') as f:
+                    f.write(await resp.read())
+        except FileNotFoundError:
+            print(f"Unable to download image: {filename}")
+            pass
 
-        async with session.get(img_src) as resp:
-            with open(os.path.join(save_dir, filename), 'wb') as f:
-                f.write(await resp.read())
+        # async with session.get(img_src) as resp:
+        #     with open(os.path.join(save_dir, filename), 'wb') as f:
+        #         f.write(await resp.read())
 
     # 保存文章
     def save(self, repo_name, title, body):
