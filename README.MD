@@ -2,7 +2,7 @@
 请注意，本方法在语雀版本升级后，只能支持超级会员使用token导出！
 
 ## 1、写在前面
-![Version](https://img.shields.io/badge/Version-1.0.0-blue) ![License](https://img.shields.io/badge/license-MIT-yellow) ![python](https://img.shields.io/badge/python->=3.6-orange)
+![Version](https://img.shields.io/badge/Version-1.0.2-blue) ![License](https://img.shields.io/badge/license-MIT-yellow) ![python](https://img.shields.io/badge/python->=3.6-orange)
 
 简介：ExportMD语雀知识库自动导出为 Markdown 格式，支持同时导出多个知识库。
 但ExportMD导出连续三张图片时，会出现错误，只有第一张图片的内容会被识别，本复刻版本增加了正则表达式，修复这一情况
