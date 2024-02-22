@@ -4,8 +4,14 @@
 由于我个人能力和精力的限制，已无法继续为批量导出markdown项目做深入改进。
 好在，很多小伙伴开发了新的导出工具。
 大家可以参考这两个基于Rust的项目，可以较为方便的导出，大家可以按照项目说明自行捣鼓一下。谢谢~
+
+
 https://github.com/vannvan/yuque-tools
+
+
 https://github.com/gxr404/yuque-dl
+
+
 两个新项目的特征如下：
  * 知识库批量导出
  * 无需超级会员
@@ -27,7 +33,7 @@ https://github.com/gxr404/yuque-dl
 ### 版本v1.0
 API导出连着的图片时，会出现很多`<br />`，这时连续图片中只有第一张图片会被识别
 ```
-![image.png](https://cdn.nlark.com/xxx1.png)<br />![image.png](https://cdn.nlark.com/xxx2.png)<br />![image.png](https://cdn.nlark.com/xxx3.png)
+![image.png](https://cdn.nlark.com/xxx1.png) />![image.png](https://cdn.nlark.com/xxx2.png) />![image.png](https://cdn.nlark.com/xxx3.png)
 
 ```
 为了解决这一问题，在原来的ExportMD基础上，我增加了正则表达式，现在连续图片的导出已经没有问题
