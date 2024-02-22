@@ -1,5 +1,15 @@
 # ExportMD-rectify-pics
-请注意，本方法在语雀版本升级后，只能支持超级会员使用token导出！
+## 2024-02-22 update
+大家好，由于超级会员token的限制，以及每次导出的最大数量的限制，本项目的批量导出的限制已经越来越多。
+由于我个人能力和精力的限制，已无法继续为批量导出markdown项目做深入改进。
+好在，很多小伙伴开发了新的导出工具。
+大家可以参考这两个基于Rust的项目，可以较为方便的导出，大家可以按照项目说明自行捣鼓一下。谢谢~
+https://github.com/vannvan/yuque-tools
+https://github.com/gxr404/yuque-dl
+两个新项目的特征如下：
+ * 知识库批量导出
+ * 无需超级会员
+ * 保留大纲的层级结构
 
 ## 1、写在前面
 ![Version](https://img.shields.io/badge/Version-1.0.2-blue) ![License](https://img.shields.io/badge/license-MIT-yellow) ![python](https://img.shields.io/badge/python->=3.6-orange)
